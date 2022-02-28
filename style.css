@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "atache";
+    src: url("Honey.otf");}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(192, 191, 191);
+}
+h1{
+    text-align: center;
+    color: antiquewhite;
+    margin-bottom: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.container{
+    margin-top: 10%;
+    padding: 5%;
+    padding-bottom: 5%;
+    background-color: rgb(63, 61, 61);
+    border-radius: 15px;
+}
+.todo{
+    border: 1px solid black;
+    padding: 3px;
+    margin: 2px;
+    background-color: rgb(139, 137, 137);
+    color:rgb(255, 255, 255);
+    user-select: none;  
+    animation: slidein 1s linear;
+    cursor: pointer;
+}
+.todo:hover{
+    background-color: brown;
+}
+.barre{
+    text-decoration: line-through;
+}
+#cache{
+    display: none;
+}
+#s{
+    font-family: atache;
+    font-size: 30px;
+    color: red;
+}
+#todo{
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+}
+button{
+    margin-top: 15%;
+    margin-left: 37%;
+    height: 20px;
+    width: 50px;
+    color: rgb(63, 61, 61);;
+}
+@keyframes slidein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
